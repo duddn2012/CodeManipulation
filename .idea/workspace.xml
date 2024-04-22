@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fde62179-ee10-4487-94fb-3702c82e8bf9" name="변경" comment="study/byte code 조작 툴 Byte Buddy 적용">
-      <change afterPath="$PROJECT_DIR$/src/main/java/bytecodecontroll/ByteControllerAgent.java" afterDir="false" />
+    <list default="true" id="fde62179-ee10-4487-94fb-3702c82e8bf9" name="변경" comment="study/ Byte Buddy 프로그램 실행 이전 시점에(premain) 바이트 코드 조작">
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring/reflection/BookRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring/reflection/BookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/reflection/BookServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bytecodecontroll/ByteCodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bytecodecontroll/ByteCodeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/End.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/End.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/Start.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MoimTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MoimTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +82,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Kotlin Class" />
         <option value="JUnit5 Test Class" />
+        <option value="JUnit4 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -95,7 +102,8 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "project.structure.last.edited": "SDK",
     "project.structure.proportion": "0.15",
@@ -103,35 +111,50 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="reflection" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="reflection" />
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="애플리케이션.ByteCodeController">
-    <configuration name="ByteCodeController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bytecodecontroll.ByteCodeController" />
-      <module name="theJava.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="bytecodecontroll.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Gradle.BookServiceTest.testDi">
     <configuration name="Start" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Start" />
+      <option name="MAIN_CLASS_NAME" value="spring.Start" />
       <module name="theJava.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MoimTest.isFull" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="BookServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--stacktrace" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;reflection.BookServiceTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>true</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="BookServiceTest.test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -144,7 +167,31 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;MoimTest.isFull&quot;" />
+            <option value="&quot;reflection.BookServiceTest.test&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>true</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="BookServiceTest.testDi" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;reflection.BookServiceTest.testDi&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -177,12 +224,20 @@
       <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Gradle.BookServiceTest.test" />
+      <item itemvalue="Gradle.BookServiceTest" />
+      <item itemvalue="Gradle.BookServiceTest.testDi" />
+      <item itemvalue="Gradle.theJava [build]" />
+      <item itemvalue="애플리케이션.Start" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.theJava [build]" />
-        <item itemvalue="애플리케이션.ByteCodeController" />
-        <item itemvalue="Gradle.MoimTest.isFull" />
+        <item itemvalue="Gradle.BookServiceTest.testDi" />
         <item itemvalue="애플리케이션.Start" />
+        <item itemvalue="Gradle.BookServiceTest" />
+        <item itemvalue="Gradle.theJava [build]" />
+        <item itemvalue="Gradle.BookServiceTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -211,12 +266,32 @@
       <option name="project" value="LOCAL" />
       <updated>1713751913345</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="study/ Byte Buddy 프로그램 실행 이전 시점에(premain) 바이트 코드 조작">
+      <option name="closed" value="true" />
+      <created>1713766334158</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713766334158</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="study/JVM 이해와 코드 커버리지 툴 Jacoco 적용" />
     <MESSAGE value="study/byte code 조작 툴 Byte Buddy 적용" />
-    <option name="LAST_COMMIT_MESSAGE" value="study/byte code 조작 툴 Byte Buddy 적용" />
+    <MESSAGE value="study/ Byte Buddy 프로그램 실행 이전 시점에(premain) 바이트 코드 조작" />
+    <option name="LAST_COMMIT_MESSAGE" value="study/ Byte Buddy 프로그램 실행 이전 시점에(premain) 바이트 코드 조작" />
   </component>
 </project>

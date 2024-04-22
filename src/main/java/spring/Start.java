@@ -1,4 +1,4 @@
-/*
+package spring;/*
 
 클래스 로더 시스템 : 로딩, 링크, 초기화
 로딩: .class에서 바이트코드를 읽고 메모리에 저장
@@ -25,14 +25,19 @@ Native 키워드를 사용한 메소드 호출
 
  */
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
 public class Start {
 
-    static String myName;
+    public static String myName;
 
     static {
         myName = "youngwoo";
     }
     public static void main(String[] args) {
+        SpringApplication.run(Start.class, args);
         System.out.println(Start.class.getSuperclass());
     }
 }
