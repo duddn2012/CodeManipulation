@@ -12,7 +12,7 @@ import spring.di.BookService;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = Start.class)
-public class BookServiceTest {
+public class BookContainerServiceTest {
 
     @Test
     public void test(){
